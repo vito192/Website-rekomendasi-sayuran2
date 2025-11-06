@@ -1,0 +1,129 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f8fff8;
+  color: #1a3c1a;
+  background-size: cover;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+  position: fixed;     /* agar tetap di posisi atas saat scroll */
+  top: 0;              /* tempel di bagian atas halaman */
+  left: 0;
+  right: 0;
+  z-index: 1000;       /* supaya tidak ketimpa elemen lain */
+}
+
+.navbar .logo {
+  color: #2b7a2b;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #1a3c1a;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #2b7a2b;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;         /* biar otomatis pindah ke bawah kalau sempit */
+  justify-content: center; /* rata tengah */
+  gap: 20px;               /* jarak antar card */
+  padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    -webkit-transition: transform 0.3s, box-shadow 0.3s;
+    -moz-transition: transform 0.3s, box-shadow 0.3s;
+    -ms-transition: transform 0.3s, box-shadow 0.3s;
+    -o-transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+  width: 100%;       /* biar menyesuaikan lebar card */
+  height: 150px;     /* tinggi tetap, biar rapi */
+  border-radius: 10px 10px 0 0; /* sudut atas gambar melengkung */
+  margin-bottom: 10px;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #1b5e20;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #2e7d32;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: #256f28;
+}
+
+.hero-image img {
+  width: 500px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #ffffff;
+  border-top: 1px solid #d9d9d9;
+  font-size: 14px;
+  color: #2b7a2b;
+}
